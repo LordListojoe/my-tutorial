@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+              <title>Practice Session</title>
+
+      <link rel="stylesheet" href="prac style.css">
+       
+    </head>
+    <body>
+        <!--
+        1. Inline
+        2. Internal
+        3. External
+    -->
+    <!--margin = space around an element
+    
+    
+    -->
+<!--
+    float =positions an element an element to the left or right side of a container
+             ex. Popular for wrapping elements around images.  -->
+
+
+
+   <div id="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam esse alias illum accusamus quisquam, et quia sed. Suscipit, aliquid labore fugit culpa ea at tenetur? Pariatur cupiditate eaque eos illo.</div>
+   <div id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quod similique ipsa asperiores voluptate molestias doloribus. Illum maxime facere consectetur voluptates modi, earum et saepe aspernatur, iusto quam totam eligendi?</div>
+
+
+
+    <section>
+         <h1 class="welcome">Welcome!</h1>
+         <h1 id="joseph">My name is joseph</h1>
+         <h1>This card mixes HTML structure with CSS styling.</h1>
+                  <span class="structure">card mixes HTML structure with CSS styling .</span>
+          <p id="p1">SATA SSDs strike an ideal balance for all laptops, which makes them a common upgrade path. 
+            SATA SSDs remain limited by the SATA III interface bandwidth ceiling SATA Solid-State Drives (SSDs) represent a major improvement over HDDs in terms of speed and reliability.
+             Instead of mechanical parts, they use flash memory, which allows faster data access and reduced power consumption.
+             <p id="p2" >SATA SSDs are capable of read and write speeds of around 450–550 MB/s, which is significantly faster than HDDs.</p>
+              As a result, laptops equipped with SATA SSDs experience faster boot times, quicker file transfers, and improved system responsiveness. However, these advantages come with a higher cost per gigabyte compared to HDDs</p>
+         <p id="p3">This card mixes HTML structure with CSS styling.</p>
+         <p id="p4">This card mixes HTML structure with CSS styling.</p>
+           
+         <button style="background-color: lightblue;font-weight:bold ;" >Learn more</button>
+    </section>
+    <script>
+
+        const num1 =Number(prompt(" Enter your first number"));
+        const num2 =Number(prompt(" Enter your second number"));
+
+
+        const num3 =Number(prompt(" Enter your third number"));
+        const num4 =Number(prompt(" Enter your fourth number"));
+        function displaySum(firstNum, secondNum){
+let sum = firstNum +secondNum;
+alert(" The sum of " + firstNum + " and " + secondNum + " is;" +sum)
+        }
+displaySum(num1, num2);
+displaySum(num3, num4);
+displaySum(num1, num3);
+displaySum(num2, num4);10
+
+        let firstsum = num1+ num2;
+                let secondsum = num3+ num4;
+        let thirdsum = num1+ num3;
+        let fourthsum = num2+ num4;
+
+
+
+        console.log("The sum of " +num1 +" and " +num2 +" is:" +firstsum);
+        console.log("The sum of " +num3 +" and " +num4 +" is:" +secondsum);
+        console.log("The sum of " +num1 +" and " +num3 +" is:" +thirdsum);
+        console.log("The sum of " +num2 +" and " +num4 +" is:" +fourthsum);
+
+
+
+
+        alert("The sum of " +num1 +" and " +num2 +" is:" +sum);
+    </script>
+    </body>
+</html>
