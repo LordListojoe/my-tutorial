@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>My Personal Profile</title>
+
+    
+    <link rel="stylesheet" href="My%20Personal%20Profile_files/rr.css">
+</head>
+<body>
+
+    <h1>My Personal Profile Webpage</h1>
+
+    <p>
+        My name is  Osei Monica Asantewaa , a student of University of Ghana
+        offering Bachelor of Science in Mathematical Science.
+    </p>
+
+    <button onclick="showPic()">Click Me</button>
+
+    
+    <div id="profileBox" style="display: block;"> My name is Osei Monica
+ Asantewaah, a student of University of Ghana
+        offering Bachelor of Science in Mathematical Science. I am a 
+hardworking and motivated student with a strong interest in learning,and
+ developing practical skills for future opportunities.
+ I enjoy exploring new ideas, and challenging myself to achieve 
+excellence.
+
+        <img src="My%20Personal%20Profile_files/TTP9805.jpg" alt="TTP9805.jpg" class="profile-pic">
+    </div>
+    
+    <script src="My%20Personal%20Profile_files/rr.js"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
